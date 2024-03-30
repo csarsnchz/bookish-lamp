@@ -1,0 +1,26 @@
+/* Reset default styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set background color and font styles */
+body {
+    background-color: #dfdfdf;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header */
+h1 {
+    color: #2e2d2d;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Style the paragraph */
+p {
+    color: #645a5a;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
