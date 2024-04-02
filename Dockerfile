@@ -22,7 +22,9 @@ WORKDIR /usr/src/app
 
 COPY package.json package-lock.json ./
 
-RUN npm install --prod
+RUN npm install
+
+RUN mkdir -p ./usr/src/app/dist
 
 COPY --from=builder /app/dist ./dist
 
