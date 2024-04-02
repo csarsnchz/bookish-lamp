@@ -18,15 +18,15 @@ RUN npm install build
 FROM node:20-alpine3.19 AS runner
 
 # Set working directory
-WORKDIR /usr/src/app
+WORKDIR /app
 
 COPY package.json package-lock.json ./
 
 RUN npm install
 
-RUN mkdir -p ./usr/src/app/dist
+RUN mkdir -p ./app/dist
 
-COPY --from=builder ./app/node_modules ./usr/src/app/dist
+COPY --from=builder ./app/node_modules ./app/dist/node_modules
 
 # # Copiar el directorio y su contenido
 # RUN mkdir -p ./pokedex
