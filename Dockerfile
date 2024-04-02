@@ -26,7 +26,7 @@ RUN npm install
 
 RUN mkdir -p ./usr/src/app/dist
 
-COPY --from=builder ./usr/src/app/dist ./dist
+COPY --from=builder ./usr/src/app/dist ./app
 
 # # Copiar el directorio y su contenido
 # RUN mkdir -p ./pokedex
